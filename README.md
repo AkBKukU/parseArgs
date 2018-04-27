@@ -67,10 +67,10 @@ $ ./example.sh -h
 
 ```
 
-Firstly, there are two minor issues here. The output is well formated and longer
-long form names mess up the spacing a bit. And it's currently the auto help
-doesn't tell you how many parameters an argument takes. It's up to you to put it
-in the help text.
+Firstly, there are two minor issues here. The output is not well formated and
+longer long form names mess up the spacing a bit. And it's currently the auto
+help doesn't tell you how many parameters an argument takes. It's up to you to
+put it in the help text.
 
 Now we can see we have some basic arguments so let's try running a simple one.
 
