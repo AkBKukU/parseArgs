@@ -79,7 +79,7 @@ $ ./example.sh -i "test123"
 test123
 ```
 
-We set the input flag with `-i "test123" and it automatically create the
+We set the input flag with `-i "test123"` and it automatically create the
 variable for the script.
 
 Next let's run the change input parameter as well:
