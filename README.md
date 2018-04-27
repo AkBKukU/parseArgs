@@ -17,6 +17,17 @@ Next after you declare and functions the arguments call you need to run
 `argParse "$@"` so the parseArgs file can handle everything. See `example.sh`
 for a complete demonstration.
 
+## Features
+
+ - Short and long names for arguments
+ - Argument execution priority
+ - Combined arguments (ex `script -xzvf`)
+ - Automatic parameter variable creation
+ - Automatically generated help output
+ - Multi parameter arguments (ex `script --replace "old" "new"`)
+ - Automatic flag arguments (ex `script -v`)
+
+
 ## Usage
 
 Let's see what a flag looks like:
