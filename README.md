@@ -79,7 +79,7 @@ $ ./example.sh -i "test123"
 test123
 ```
 
-We set the input flag with `-i "test123"` and it automatically create the
+We set the input flag with `-i "test123"` and it automatically created the
 variable for the script.
 
 Next let's run the change input parameter as well:
@@ -102,7 +102,7 @@ tesat23
 ```
 
 The `$verboseMode` variable is automatically created and since it was added to
-the command it is active and set to one. Since flags have a priority of 0 the
+the command it is active and set to `"1"`. Since flags have a priority of 0 the
 `$verboseMode` variable is set before `changeInput` is called.
 
 Now let's add the final argument that removes numbers:
@@ -116,9 +116,10 @@ test
 
 We can see the output is now just "test" and that the "t1" to "at" change did
 not happen. The no numbers argument has a lower priority than the change input
-argument so after removing all the numbers there was no "t1" left in the input.
+argument so it was run first after removing all the numbers there was no "t1"
+left in the input.
 
-We can also see that the `n` argument was added directly after `-v` there is no
-need to seperate them out. As a matter of fact the whole command could just be
-`./example -vni "test" -c "t1" "at" and combine all the flags with the input
-action right at the begining.
+We can also see that the `n` argument was added directly after `-v` and that
+there is no need to separate them out. As a matter of fact the whole command
+could just be `./example -vni "test" -c "t1" "at" and combine all the flags
+with the input action right at the begining.
